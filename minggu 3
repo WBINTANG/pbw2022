@@ -1,1 +1,49 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Multimedia - HTML 5</Title>
+</head>
+<body>
+<h2>Belajar Multimedia - HTML 5</h2>
+<p>
+<button onclick="playVid()" type="button">play Video</button>
+<button onclick="pauseVid()" type="button">pause Video</button>
+<button onclick="durationVid()" type="button">Duration Video</button>
+<button onclick="enableControls()" type="button">Enable Controls</button>
+<button onclick="disableControls()" type="button">Disable Controls</button>
+<button onclick="checkControls()" type="button">check controls status</button>
+</p>
+<video width="420" id="myVideo">
+<source src="C:\Users\user\Documents\Folder Tugas\mov_bbb.mp4" type="video/mp4">
+Browser not support...
+</video>
+</body>
+<script>
+var vid = document.getElementById("myVideo");
+function enable Controls() {
+vid.controls = true;
+vid.load();
+}
 
+function disableControls() {
+vid.controls = false;
+vid.load();
+}
+
+function checkControls () {
+alert(vid.controls);
+}
+
+function durationVid() {
+alert(vid.controls);
+}
+
+function playVid() {
+vid.play();
+}
+
+function pauseVid() {
+vid.pause();
+}
+</script>
+</html>
