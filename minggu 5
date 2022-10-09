@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	    <meta charset="UTF-8">
+		<meta name="description" content="Layout Semantic Elemnt">
+		<meta name="keywords" content="HTML, CSS, Semantic">
+		<meta name="author" content="pbw2022">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Semantic Elemnt - HTML 5</title>
+    </head>
+    <body>
+        <header style="background-color:DodgerBlue;">
+            <h2>Header Halaman</h2>
+        </header>
+        <nav style="background-color:Tomato;">
+            <ul>
+                <li>Menu 1</li>
+				<li>Menu 2</li> 
+			</ul>
+		</nav>
+		<article style="background-color:orange;">
+		    <p>Lorem ipsum do site color <span style="font-size:50px;">Lorem</span>
+			ipsum do site color Lorem ipsum do site color Lorem ipsum do site color
+			</p>
+		</article>
+		<footer style="background-color:Gray;">Copyright &copy; pbw2022</footer>
+	</body>
+</html>
+<!-- http:192.168.11.125/w3schools/html/horse.mp3 -->
