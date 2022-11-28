@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>KUIS</title>
+    <script>
+	    function hitung(){
+		    var form = document.formHitung;
+		    var x = eval(form.Bil1.value);
+			var y = eval(form.Bil2.value);
+			var pil = form.opr.value;
+			
+			if (pil="+"){
+			var z = x+y;
+			}else if (pil="-"){
+			var z = x-y;
+			}else if (pil="*"){
+			var z = x*y;
+			}else if (pil="/"){
+			var z = x/y;
+			}
+			
+			form.hasil.value= z;
+		}
+    </script>	
+</head> 
+<body> 
+    <h1>KUIS Javascript</h1>
+	<form name="formHitung" action="#">
+    Bil 1 <input type="number" name="bil1"><br>
+	Opr
+	<select>
+	    <option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+	</select><br>
+	Bil 2 <input type="Number" name="bil2">
+	<input type="button" value="=" onclick="hitung()">
+	<input type="number" name="hasil" disabled>
+	</form>
+</body> 
+</html> 
